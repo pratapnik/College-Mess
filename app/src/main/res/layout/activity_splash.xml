@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6F6866"
+    android:background="@color/colorbackground"
     tools:context=".splash">
 
 
@@ -14,20 +14,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="175dp"
+        android:fontFamily="@font/ringbearer"
         android:text="Welcome To College Mess"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/imag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_spa_black_24dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
     <ProgressBar
         android:id="@+id/progressbar"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:visibility="gone" />
