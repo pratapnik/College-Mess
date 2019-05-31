@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "507180036080",
+    "firebase_url": "https://collegemess-456bb.firebaseio.com",
+    "project_id": "collegemess-456bb",
+    "storage_bucket": "collegemess-456bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507180036080:android:d2c75cba5c60e4d1",
+        "android_client_info": {
+          "package_name": "com.first.myapplication.collegemess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507180036080-b8tcaf12qo9upbatpkrh6p325kn4u2vt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.first.myapplication.collegemess",
+            "certificate_hash": "f969d0960aa0245ed23deff639bda735982767e7"
+          }
+        },
+        {
+          "client_id": "507180036080-96bttvtm8e9qk5355qndbjv97g5ea78s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdg8idbjwfac_RPcil7dZiJeZCrRy0OOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507180036080-96bttvtm8e9qk5355qndbjv97g5ea78s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".Feedback"
+    android:id="@+id/relativeLayout3">
+
+    <TextView
+        android:id="@+id/mess_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Which Mess ?"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <!--<RatingBar-->
+        <!--android:id="@+id/ratingBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="78dp" />-->
+    <Spinner
+        android:id="@+id/mess"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0F6BB4"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintStart_toStartOf="@+id/mess_type"
+        app:layout_constraintTop_toBottomOf="@+id/mess_type"></Spinner>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="What is your feedback about ?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/navigation2"
+        app:layout_constraintStart_toStartOf="@+id/mess_type"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <Spinner
+        android:id="@+id/feedback_type"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#0F6BB4"
+        android:dropDownWidth="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation2"
+        app:layout_constraintStart_toStartOf="@+id/mess_type"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        app:layout_constraintVertical_bias="0.0">
+
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/enterfeedbackEditText"
+        android:layout_width="357dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="  Enter your feedback....."
+        android:inputType="text|textMultiLine"
+        android:soundEffectsEnabled="true"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_type" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#FF3F51B5"
+        android:backgroundTint="#0F6BB4"
+        android:onClick="sub"
+        android:text="Submit"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/navigation2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/color1"
+        app:itemTextColor="@color/color1"
+        app:menu="@menu/feedback_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

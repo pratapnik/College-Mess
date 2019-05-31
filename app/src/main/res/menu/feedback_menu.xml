@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item
+            android:title="Mess Menu"
+            android:id="@+id/nav_messmenu"
+            android:icon="@drawable/messmenu"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            />
+
+        <!--<item-->
+        <!--android:title="Notifications"-->
+        <!--android:id="@+id/nav_notifications"-->
+        <!--android:icon="@drawable/notify"-->
+        <!--android:enabled="true"-->
+        <!--app:showAsAction="ifRoom"-->
+
+        <!--/>-->
+
+        <item android:id="@+id/nav_signout"
+            android:icon="@drawable/signout"
+            android:title="Logout"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            />
+
+        <!--<item android:id="@+id/nav_you"-->
+            <!--android:icon="@drawable/you"-->
+            <!--android:title="Profile"-->
+            <!--android:enabled="true"-->
+            <!--app:showAsAction="ifRoom"-->
+            <!--/>-->
+
+
+
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">College Mess</string>
+
+    <string-array name="days">
+        <item>Select</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+
+    <string-array name="time">
+        <item>Select</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Dinner</item>
+
+    </string-array>
+
+    <string-array name="options">
+        <item>Select</item>
+        <item>App</item>
+        <item>Food</item>
+        <item>Infrastructure</item>
+        <item>Staff</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="mess">
+
+        <item>Select</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+
+    <string name="title_activity_profile">profile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
