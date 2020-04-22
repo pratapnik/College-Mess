@@ -10,6 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        supportActionBar?.hide()
+
         btnAdminPanel.setOnClickListener {
             val adminLoginIntent = Intent(this, admin_login::class.java)
             startActivity(adminLoginIntent)

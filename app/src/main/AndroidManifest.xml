@@ -19,12 +19,12 @@
         >
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            />
         <activity
             android:name=".loginActivity"
             android:label="Mess Menu"
             android:launchMode="singleTask"
-            android:theme="@style/AppTheme.NoActionBar" />
+            />
         <activity
             android:name=".Feedback"
             android:label="Feedback" />

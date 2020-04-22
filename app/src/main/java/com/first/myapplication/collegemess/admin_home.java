@@ -156,7 +156,7 @@ public class admin_home extends AppCompatActivity {
 
 
                 String item = changedPost.getMenuItem();
-                mBuilder.setSmallIcon(R.drawable.cmicon);
+                mBuilder.setSmallIcon(R.drawable.ic_app_icon);
                 mBuilder.setContentTitle("Upcoming Meal");
                 mBuilder.setContentText(item);
                 mBuilder.setTicker("You have new notification");

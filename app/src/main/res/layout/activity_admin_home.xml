@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorbackground"
     tools:context=".admin_home">
 
     <TextView
@@ -89,8 +88,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:background="@color/colorPrimary"
-        app:itemIconTint="@color/color1"
-        app:itemTextColor="@color/color1"
+        app:itemTextColor="@color/color_white"
+        app:itemIconTint="@color/color_white"
         app:menu="@menu/admin_home" />
 
     <Button

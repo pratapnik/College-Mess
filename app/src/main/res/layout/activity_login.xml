@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".loginActivity"
-    android:background="@color/colorbackground"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -94,8 +93,8 @@
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:background="@color/colorPrimary"
-        app:itemIconTint="@color/color1"
-        app:itemTextColor="@color/color1"
+        app:itemIconTint="@color/color_white"
+        app:itemTextColor="@color/color_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

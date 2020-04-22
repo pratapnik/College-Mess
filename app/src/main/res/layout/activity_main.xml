@@ -3,23 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/colorbackground"
     tools:context=".MainActivity">
-
-
-    <ProgressBar
-        android:id="@+id/progressbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,11 +13,10 @@
         android:layout_height="242dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="155dp"
-        app:layout_constraintBottom_toTopOf="@+id/googlein"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cmicon" />
+        app:srcCompat="@drawable/ic_app_icon" />
 
     <Button
         android:id="@+id/btnAdminPanel"
@@ -44,7 +29,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googlein" />
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -52,12 +37,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:fontFamily="@font/mulisemibold"
+        android:fontFamily="@font/font_bold_italic"
         android:text="Simple Mess App To Make your life easy "
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34dp"
-        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="@+id/imageView"
