@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout2"
@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:visibility="visible"
     tools:context=".loginActivity"
-    android:background="@color/colorbackground"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -89,14 +88,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 
-    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="0dp"
         android:layout_height="58dp"
         android:background="@color/colorPrimary"
-        app:itemIconTint="@color/color1"
-        app:itemTextColor="@color/color1"
+        app:itemIconTint="@color/color_white"
+        app:itemTextColor="@color/color_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -135,4 +133,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

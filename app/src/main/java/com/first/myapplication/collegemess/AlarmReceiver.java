@@ -1,13 +1,12 @@
 package com.first.myapplication.collegemess;
 
-import android.app.AlarmManager;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -50,7 +49,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
 
                         String item = changedPost.getMenuItem();
-                        mBuilder.setSmallIcon(R.drawable.cmicon);
+                        mBuilder.setSmallIcon(R.drawable.ic_app_icon);
                         mBuilder.setContentTitle("Upcoming Meal");
                         mBuilder.setContentText(item);
                         mBuilder.setTicker("You have new notification");

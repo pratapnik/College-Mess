@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "507180036080-cqidrhd5un1rtqodm468nldh4q0nikj0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.first.myapplication.collegemess",
+            "certificate_hash": "1f2c2d5fbca478d322de562e821b06b884d3bcac"
+          }
+        },
+        {
           "client_id": "507180036080-b8tcaf12qo9upbatpkrh6p325kn4u2vt.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
