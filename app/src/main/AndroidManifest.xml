@@ -47,8 +47,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".instructions"
-            android:label="Instructions"></activity>
+        <activity
+            android:name=".instructions"
+            android:label="Instructions" />
         
         <receiver android:name=".AlarmReceiver">
             <intent-filter>

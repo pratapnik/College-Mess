@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
@@ -20,18 +21,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/googlein"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/admin"
-        app:layout_constraintEnd_toEndOf="@+id/admin"
-        app:layout_constraintStart_toStartOf="@+id/admin"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-    </com.google.android.gms.common.SignInButton>
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="335dp"
@@ -45,12 +34,10 @@
         app:srcCompat="@drawable/cmicon" />
 
     <Button
-        android:id="@+id/admin"
+        android:id="@+id/btnAdminPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#0F6BB4"
-        android:onClick="admin"
-
         android:text="Admin? Tap Here"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,12 +58,22 @@
         android:textColor="#000000"
         android:textSize="34dp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/googlein"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.607" />
 
+    <Button
+        android:id="@+id/btnMessMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mess Menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintBottom_toTopOf="@id/btnAdminPanel"
+        />
 
-</androidx.constraintlayout.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
