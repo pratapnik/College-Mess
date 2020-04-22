@@ -1,10 +1,10 @@
 package com.first.myapplication.collegemess;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,12 +38,12 @@ public class admin_feedbacks extends AppCompatActivity {
         databaseFeedback.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot feedbackSnapshot : dataSnapshot.getChildren()){
+                for (DataSnapshot feedbackSnapshot : dataSnapshot.getChildren()) {
                     feed feed = feedbackSnapshot.getValue(feed.class);
-                    feedList.add(0,feed);
+                    feedList.add(0, feed);
 
                 }
-               FeedbacksList adapter = new FeedbacksList(admin_feedbacks.this, feedList);
+                FeedbacksList adapter = new FeedbacksList(admin_feedbacks.this, feedList);
                 listViewFeedbacks.setAdapter(adapter);
 
             }
