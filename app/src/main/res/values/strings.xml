@@ -47,5 +47,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="app_title">College Mess</string>
-    <string name="display_menu_title">DISPLAY MENU</string>
+    <string name="button_title_go">GO</string>
+    <string name="first_spinner_title">Select Day of Week</string>
+    <string name="second_spinner_title">Select Meal time</string>
 </resources>

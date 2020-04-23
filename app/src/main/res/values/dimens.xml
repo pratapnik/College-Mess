@@ -11,4 +11,6 @@
     <dimen name="app_icon_size">120dp</dimen>
     <dimen name="list_view_heading">16sp</dimen>
     <dimen name="menu_display_padding">28dp</dimen>
+    <dimen name="circular_shape_size">52dp</dimen>
+
 </resources>

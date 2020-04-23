@@ -19,7 +19,7 @@
             android:textAllCaps="true"
             android:textSize="@dimen/list_view_heading"
             android:fontFamily="@font/font_bold"
-            android:textColor="@color/color_button"
+            android:textColor="@color/color_text"
             android:text="TextView" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_margin="@dimen/list_view_padding"
             android:textSize="@dimen/list_view_heading"
             android:fontFamily="@font/font_bold"
-            android:textColor="@color/color_button"
+            android:textColor="@color/color_text"
             android:text="TextView" />
 
     </LinearLayout>
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_italic"
-        android:textColor="@color/color_button"
+        android:textColor="@color/color_text_faded"
         android:layout_margin="@dimen/list_view_padding"
         android:text="TextView" />
 
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_regular"
-        android:textColor="@color/color_button"
+        android:textColor="@color/color_text_faded"
         android:layout_margin="@dimen/list_view_padding"
         android:text="TextView" />
 </LinearLayout>

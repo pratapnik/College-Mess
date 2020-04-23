@@ -38,7 +38,7 @@ public class loginActivity extends AppCompatActivity {
     TextView menuItem;
     Spinner day;
     Spinner meal;
-    Button update;
+    TextView update;
     ProgressBar progressBar;
 
 

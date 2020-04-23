@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         btnAdminPanel.setOnClickListener {
-            val adminLoginIntent = Intent(this, admin_login::class.java)
+            val adminLoginIntent = Intent(this, admin_home::class.java)
             startActivity(adminLoginIntent)
         }
 
