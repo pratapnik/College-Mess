@@ -62,7 +62,7 @@ public class loginActivity extends AppCompatActivity {
         menuItem = findViewById(R.id.menuDisplay);
 //        day = (Spinner)findViewById(R.id.DayRetrieve);
 //        meal = (Spinner)findViewById(R.id.mealRetrieve);
-        update = findViewById(R.id.submit);
+        update = findViewById(R.id.btnSubmit);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

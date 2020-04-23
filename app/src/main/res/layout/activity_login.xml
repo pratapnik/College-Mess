@@ -41,18 +41,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="#0F6BB4"
-        android:onClick="submit"
-        android:text="Submit"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/display_menu_title"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:fontFamily="@font/font_bold"
+        android:backgroundTint="@color/color_button"
+        android:textColor="@color/color_white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuDisplay" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        />
 
 
     <TextView
@@ -103,23 +103,18 @@
 
     <TextView
         android:id="@+id/menuDisplay"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_button"
+        android:textSize="@dimen/list_view_heading"
+        android:fontFamily="@font/font_bold_italic"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:padding="@dimen/menu_display_padding"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pbar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner2"
+        app:layout_constraintBottom_toTopOf="@id/btnSubmit"
+         />
 
     <ProgressBar
         android:id="@+id/pbar"
