@@ -18,25 +18,30 @@
         android:theme="@style/AppTheme"
         >
         <activity
-            android:name=".MainActivity"
-            />
-        <activity
             android:name=".loginActivity"
             android:label="Mess Menu"
             android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             />
         <activity
             android:name=".Feedback"
-            android:label="Feedback" />
+            android:label="Feedback"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity
             android:name=".admin_login"
-            android:label="Admin" />
+            android:label="Admin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity
             android:name=".admin_home"
-            android:label="Home" />
+            android:label="Home"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity
             android:name=".admin_feedbacks"
-            android:label="Student Feedbacks" />
+            android:label="Student Feedbacks"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".splash"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -49,7 +54,8 @@
 
         <activity
             android:name=".instructions"
-            android:label="Instructions" />
+            android:label="Instructions"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         
         <receiver android:name=".AlarmReceiver">
             <intent-filter>

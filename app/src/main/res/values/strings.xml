@@ -50,4 +50,6 @@
     <string name="button_title_go">GO</string>
     <string name="first_spinner_title">Select Day of Week</string>
     <string name="second_spinner_title">Select Meal time</string>
+    <string name="text_for_admins">Admin</string>
+    <string name="text_title_menu">Menu</string>
 </resources>

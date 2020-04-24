@@ -5,37 +5,11 @@
     <group>
 
         <item
-            android:title="Mess Menu"
             android:id="@+id/nav_messmenu"
+            android:enabled="true"
             android:icon="@drawable/messmenu"
-            android:enabled="true"
-            app:showAsAction="ifRoom"
-            />
-
-        <!--<item-->
-        <!--android:title="Notifications"-->
-        <!--android:id="@+id/nav_notifications"-->
-        <!--android:icon="@drawable/notify"-->
-        <!--android:enabled="true"-->
-        <!--app:showAsAction="ifRoom"-->
-
-        <!--/>-->
-
-        <item android:id="@+id/nav_signout"
-            android:icon="@drawable/signout"
-            android:title="Logout"
-            android:enabled="true"
-            app:showAsAction="ifRoom"
-            />
-
-        <!--<item android:id="@+id/nav_you"-->
-            <!--android:icon="@drawable/you"-->
-            <!--android:title="Profile"-->
-            <!--android:enabled="true"-->
-            <!--app:showAsAction="ifRoom"-->
-            <!--/>-->
-
-
+            android:title="Mess Menu"
+            app:showAsAction="ifRoom" />
 
 
     </group>
