@@ -6,13 +6,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <ListView
-        android:id="@+id/listViewFeedbacks"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView
+        android:id="@+id/tvUserFeedbacksTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feedbacks"
+        android:textAllCaps="true"
+        android:textSize="@dimen/app_title_splash_text_size"
+        android:layout_margin="@dimen/fab_margin"
+        android:fontFamily="@font/font_bold"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/listViewFeedbacks"
+        />
+
+    <ListView
+        android:id="@+id/listViewFeedbacks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvUserFeedbacksTitle"
+        app:layout_constraintEnd_toEndOf="@id/tvUserFeedbacksTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvUserFeedbacksTitle"
         app:layout_constraintBottom_toBottomOf="parent"
         >
     </ListView>

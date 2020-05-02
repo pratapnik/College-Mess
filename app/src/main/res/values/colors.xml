@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#19877A</color>
-    <color name="colorPrimaryDark">#19877A</color>
+    <color name="colorPrimary">#3D5AFE</color>
+    <color name="colorPrimaryDark">@color/color_white</color>
+    <color name="color_primary_50_opacity">#803D5AFE</color>
+    <color name="color_button">#3D5AFE</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_white">#FFFFFF</color>
-    <color name="color_button">#282328</color>
+    <color name="color_text">#282328</color>
+    <color name="color_text_faded">#37474f</color>
 </resources>

@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_margin="@dimen/list_view_padding"
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textViewGenre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="TextView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textViewMess"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewGenre"
-        android:layout_alignParentStart="true"
-        android:text="TextView" />
+        <TextView
+            android:id="@+id/textViewGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_view_padding"
+            android:textAllCaps="true"
+            android:textSize="@dimen/list_view_heading"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/color_text"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textViewMess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_view_padding"
+            android:textSize="@dimen/list_view_heading"
+            android:fontFamily="@font/font_bold"
+            android:textColor="@color/color_text"
+            android:text="TextView" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewFeedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewMess"
-        android:layout_alignParentStart="true"
+        android:fontFamily="@font/font_italic"
+        android:textColor="@color/color_text_faded"
+        android:layout_margin="@dimen/list_view_padding"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/textViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewFeedback"
-        android:layout_alignParentStart="true"
+        android:fontFamily="@font/font_regular"
+        android:textColor="@color/color_text_faded"
+        android:layout_margin="@dimen/list_view_padding"
         android:text="TextView" />
-</RelativeLayout>
+</LinearLayout>

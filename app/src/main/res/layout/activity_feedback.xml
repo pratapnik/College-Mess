@@ -28,13 +28,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.060000002" />
 
-    <!--<RatingBar-->
-        <!--android:id="@+id/ratingBar"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="78dp" />-->
     <Spinner
         android:id="@+id/mess"
         android:layout_width="321dp"
@@ -80,8 +73,7 @@
 
     </Spinner>
 
-
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/enterfeedbackEditText"
         android:layout_width="357dp"
         android:layout_height="150dp"
@@ -96,19 +88,18 @@
         app:layout_constraintBottom_toTopOf="@+id/submit"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/feedback_type" />
-
+        app:layout_constraintTop_toBottomOf="@+id/feedback_type"/>
 
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:background="#FF3F51B5"
-        android:backgroundTint="#0F6BB4"
+        android:background="@drawable/custom_button_background"
         android:onClick="sub"
         android:text="Submit"
-        android:textColor="#FFFFFFFF"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/font_bold"
         app:layout_constraintBottom_toTopOf="@+id/navigation2"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"

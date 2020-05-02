@@ -56,22 +56,10 @@ public class Feedback extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.nav_signout:
-                        FirebaseAuth.getInstance().signOut();
-                        Intent i = new Intent(Feedback.this, MainActivity.class);
-                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(i);
-                        finish();
-                        return true;
-//                    case R.id.nav_you:
-
-//                        return true;
                     case R.id.nav_messmenu:
                         Intent intent = new Intent(Feedback.this, loginActivity.class);
                         startActivity(intent);
                         return true;
-//                    case R.id.nav_notifications:
-//                        return true;
                 }
                 return false;
             }
@@ -91,14 +79,6 @@ public class Feedback extends AppCompatActivity {
     }
 
     private void addFeedback() {
-//        rb = findViewById(R.id.ratingBar);
-//        rb.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-//            @Override
-//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-//
-//            }
-//        });
-
         FirebaseUser user = mAuth.getCurrentUser();
 
         feedback = findViewById(R.id.enterfeedbackEditText);
