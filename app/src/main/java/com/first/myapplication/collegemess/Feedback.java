@@ -79,14 +79,6 @@ public class Feedback extends AppCompatActivity {
     }
 
     private void addFeedback() {
-//        rb = findViewById(R.id.ratingBar);
-//        rb.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-//            @Override
-//            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-//
-//            }
-//        });
-
         FirebaseUser user = mAuth.getCurrentUser();
 
         feedback = findViewById(R.id.enterfeedbackEditText);
