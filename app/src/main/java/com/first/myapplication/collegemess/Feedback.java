@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Feedback extends AppCompatActivity {
+public class Feedback extends AppCompatActivity{
 
     //RatingBar rb;
     Spinner mySpinner, mySpinner2;
@@ -96,11 +96,14 @@ public class Feedback extends AppCompatActivity {
             feed feed = new feed(id, mess, genre, response, emailID);
 
             databaseFeedback.child(id).setValue(feed);
+            makeToast("Thanks for your feedback");
+        } else 
+            makeToast("Please Give the feedback");  
+       
 
-            Toast.makeText(getApplicationContext(), "Thanks for your feedback", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(getApplicationContext(), "Please Give the feedback", Toast.LENGTH_SHORT).show();
-        }
-
+    }
+    
+    private void makeToast(String msg) {
+        Toast.makeText(Feedback.this, msg, Toast.LENGTH_SHORT).show();
     }
 }
